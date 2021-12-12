@@ -23,16 +23,20 @@ nav {
   list-style-type: none;
 }
 
-.menu .menu_link {
+.menu_link {
   font-weight: 300;
   font-size: 15px;
   color: #FFFFFF;
   text-decoration: none;
 }
 
-.menu .menu_item {
+.menu_item {
   border-right: 2px dotted #000000;
   padding-right: 27px;
+}
+
+.menu_item:last-child {
+  border-right: none;
 }
 
 .sub_header {
@@ -42,20 +46,20 @@ nav {
   background: rgba(0, 0, 0, 0.6);
 }
 
-.sub_header .sub_header_logo {
+.sub_header_logo {
   display: block;
   max-width: 100%;
   margin-top: 16px;
 }
 
-.sub_header .sub_header_discr {
+.sub_header_discr {
   font-weight: 200;
   font-size: 13px;
   opacity: .7;
   color: #FFFFFF;
 }
 
-.sub_header .sub_header_call {
+.sub_header_call {
   text-align: right;
   opacity: .7;
   display: block;
@@ -65,19 +69,19 @@ nav {
   color: #FFFFFF;
 }
 
-.sub_header .sub_header_number {
+.sub_header_number {
   display: block;
   text-align: right;
 }
 
-.sub_header a {
+a {
   font-size: 22px;
   text-transform: uppercase;
   color: #FFFFFF;
   text-decoration: none;
 }
 
-.sub_header .call_btn {
+.call_btn {
   margin-top: 20px;
   font-size: 14px;
   width: 172px;
@@ -92,9 +96,9 @@ nav {
   color: #FFFFFF;
 }
 
-.sub_header .call_btn:hover {
+.call_btn:hover {
   background-image: none;
-  background-color: #1eacc7;
+  background-color: #1EACC7;
 }
 
 .promo {
@@ -102,7 +106,7 @@ nav {
   background: url("../img/background/uber_bg.jpg") center center/cover no-repeat;
 }
 
-.promo .promo_header {
+.promo_header {
   margin-top: 150px;
   margin-bottom: 0px;
   font-weight: 900;
@@ -112,7 +116,7 @@ nav {
   color: #FFFFFF;
 }
 
-.promo .promo_sub_header {
+.promo_sub_header {
   font-weight: 900;
   font-size: 36px;
   text-align: center;
@@ -120,7 +124,7 @@ nav {
   color: #FFFFFF;
 }
 
-.promo .promo_descr {
+.promo_descr {
   margin-top: 12px;
   font-weight: 300;
   font-size: 16px;
@@ -129,7 +133,7 @@ nav {
   color: #FFFFFF;
 }
 
-.promo .promo_btn {
+.promo_btn {
   display: block;
   margin: 115px auto 0px auto;
   width: 259px;
@@ -148,16 +152,16 @@ nav {
   text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.21);
 }
 
-.promo .promo_btn:hover {
+.promo_btn:hover {
   background-image: none;
-  background-color: #1eacc7;
+  background-color: #1EACC7;
 }
 
 .reasons {
   min-height: 850px;
 }
 
-.reasons .label {
+.label {
   display: block;
   margin: 20px auto 0px auto;
   width: 115px;
@@ -172,7 +176,7 @@ nav {
   line-height: 29px;
 }
 
-.reasons .title {
+.title {
   margin: 33px 0px 0px;
   font-weight: bold;
   font-size: 38px;
@@ -181,7 +185,7 @@ nav {
   color: #222222;
 }
 
-.reasons .reason_block {
+.reason_block {
   min-height: 170px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -194,7 +198,7 @@ nav {
           align-items: center;
 }
 
-.reasons .reason_block .reason_icon {
+.reason_block .reason_icon {
   width: 116px;
   height: 116px;
   border-radius: 100%;
@@ -210,18 +214,18 @@ nav {
           align-items: center;
 }
 
-.reasons .reason_block .reason_descr {
+.reason_block .reason_descr {
   margin: 15px 0px 0px 25px;
   width: 350px;
 }
 
-.reasons .reason_block .reason_descr .reason_header {
+.reason_block .reason_header {
   font-size: 17px;
   line-height: 21px;
   color: #1EACC7;
 }
 
-.reasons .reason_block .reason_descr .reason_text {
+.reason_block .reason_text {
   margin-top: 6px;
   font-weight: 300;
   font-size: 15px;
@@ -692,4 +696,40 @@ nav {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
+}
+
+@media (max-width: 1200px) {
+  .menu_item {
+    padding-right: 20px;
+  }
+  .menu_link {
+    font-size: 11px;
+  }
+  .promo_header {
+    font-size: 50px;
+  }
+  .reason_block {
+    margin-top: 8px;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .reason_block .reason_descr {
+    width: 300px;
+  }
+  .mobile_item {
+    width: 300px;
+  }
+}
+
+@media (max-width: 991px) {
+  .menu {
+    padding: 13px 8px;
+  }
+  .menu_item {
+    padding-right: 8px;
+  }
+  .menu_link {
+    font-size: 11px;
+  }
 }
