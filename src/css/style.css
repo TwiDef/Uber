@@ -11,6 +11,10 @@ nav {
   background: #212121;
 }
 
+.burger {
+  display: none;
+}
+
 .menu {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -698,6 +702,10 @@ a {
           justify-content: flex-end;
 }
 
+.xs-visible {
+  display: none;
+}
+
 /* ===================== 1200px =================== */
 @media (max-width: 1200px) {
   .menu_item {
@@ -774,6 +782,7 @@ a {
 /* ===================== 767px =================== */
 @media (max-width: 767px) {
   .menu {
+    z-index: 100;
     padding: 20px 15px;
     position: fixed;
     -webkit-box-orient: vertical;
@@ -803,6 +812,64 @@ a {
     margin: 20px 0px;
   }
   .menu_link {
-    font-size: 20px;
+    font-size: 18px;
+  }
+  .burger {
+    display: block;
+    position: absolute;
+    right: 16px;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+    width: 26px;
+    height: 12px;
+  }
+  .burger span {
+    display: block;
+    height: 2px;
+    width: 100%;
+    background-color: #fff;
+    margin-bottom: 4px;
+    -webkit-transition: 0.6s all;
+    transition: 0.6s all;
+  }
+  .burger_active span {
+    margin-bottom: -2px;
+  }
+  .burger_active span:nth-child(1) {
+    -webkit-transform: translateY(3px) rotate(-45deg);
+            transform: translateY(3px) rotate(-45deg);
+  }
+  .burger_active span:nth-child(2) {
+    display: none;
+  }
+  .burger_active span:nth-child(3) {
+    -webkit-transform: translateY(3px) rotate(45deg);
+            transform: translateY(3px) rotate(45deg);
+  }
+  .xs-hidden {
+    display: none;
+  }
+  .xs-visible {
+    display: block;
+  }
+  .sub_header_number {
+    margin-top: 4px;
+    display: block;
+    font-size: 18px;
+    text-transform: uppercase;
+    text-align: center;
+    color: #FFFFFF;
+  }
+  .sub_header .call_btn {
+    width: 172px;
+    height: 40px;
+    margin: 0 auto;
+    margin-top: 8px;
+    display: block;
+  }
+  .promo_header {
+    font-size: 34px;
+    margin-top: 128px;
   }
 }
