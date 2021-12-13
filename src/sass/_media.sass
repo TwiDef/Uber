@@ -1,3 +1,4 @@
+/* ===================== 1200px =================== */
 @media (max-width: 1200px)
     .menu
         &_item
@@ -15,13 +16,60 @@
     .mobile
         &_item
             width: 300px
+/* ===================== 991px =================== */
 
 @media (max-width: 991px)
     .menu
         padding: 13px 8px
         &_item
-            padding-right: 8px
+            padding-right: 9px
         &_link
             font-size: 11px
+    .sub_header
+        &_logo img
+            width: 100%
+        &_descr
+            font-size: 12px
+        &_number
+            font-size: 20px
+        .call_btn
+            margin-top: 22px
+            width: 100%
+            height: 40px
+    .promo
+        &_header
+            font-size: 40px
+        &_sub_header
+            font-size: 28px
+    .reason
+        padding-bottom: 60px
+        &_block
+            flex-direction: column
+            align-items: center
+        &_descr
+            width: 300px
+/* ===================== 767px =================== */
 
+@media (max-width: 767px)
+    .menu
+        padding: 20px 15px 
+        position: fixed
+        flex-direction: column
+        background-color: rgba(0,0,0, .8)
+        justify-content: center
+        align-items: center
+        top: 0
+        left: -100%
+        width: 50%
+        height: 100vh
+        transition: 0.6s all
+        &_active
+            left: 0
+        &_item
+            padding-right: 0px
+            border: none
+            margin: 20px 0px
+        &_link
+            font-size: 20px
+        
             
