@@ -706,7 +706,14 @@ a {
   display: none;
 }
 
-/* ===================== 1200px =================== */
+/* ===================== 1400px =================== */
+@media (max-width: 1400px) {
+  .menu_item {
+    padding-right: 18px;
+  }
+  /* ===================== 1200px =================== */
+}
+
 @media (max-width: 1200px) {
   .menu_item {
     padding-right: 20px;
@@ -871,5 +878,88 @@ a {
   .promo_header {
     font-size: 34px;
     margin-top: 128px;
+  }
+  .reason_block .reason_descr {
+    text-align: center;
+    width: 400px;
+  }
+  .reason_block .reason_descr .reason_header {
+    text-align: center;
+  }
+}
+
+/* ===================== 575px =================== */
+@media (max-width: 575px) {
+  nav {
+    height: 36px;
+  }
+  .sub_header {
+    height: 60px;
+  }
+  .sub_header_descr {
+    display: none;
+  }
+  .sub_header_logo {
+    margin-top: 12px;
+  }
+  .sub_header_number {
+    margin-top: 2px;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 14px;
+  }
+  .sub_header .call_btn {
+    margin-top: 1px;
+    font-size: 10px;
+    text-transform: uppercase;
+    width: 120px;
+    height: 30px;
+  }
+  .promo {
+    min-height: 400px;
+  }
+  .promo_descr {
+    display: none;
+  }
+  .promo_header {
+    margin-top: 102px;
+    font-size: 30px;
+    line-height: 35px;
+    padding: 0px 24px;
+  }
+  .promo_sub_header {
+    margin-top: 34px;
+    font-size: 20px;
+    line-height: 26px;
+  }
+  .promo_btn {
+    margin-top: 68px;
+    width: 210px;
+    height: 50px;
+    font-size: 16px;
+  }
+  .menu {
+    width: 82%;
+  }
+  .menu_link {
+    font-size: 16px;
+  }
+  .reason {
+    padding: 20px 0 32px 0px;
+  }
+  .reason .title {
+    margin-top: 18px;
+    font-size: 15px;
+  }
+  .reason_block {
+    margin-top: 26px;
+  }
+  .reason_block .reason_icon {
+    width: 100px;
+    height: 100px;
+  }
+  .reason_block .reason_descr {
+    width: 100%;
+    margin: 15px 0px 0px 0px;
   }
 }
