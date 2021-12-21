@@ -1041,24 +1041,81 @@ a {
     width: 100%;
     margin: 15px 0px 0px 0px;
   }
+  .mobile {
+    padding: 48px 0 28px 0;
+  }
   .mobile .title {
     font-size: 15px;
   }
   .choise {
+    min-width: 320px;
+    min-height: 390px;
     min-height: 390px;
   }
+  .choise .label {
+    margin-top: 38px;
+  }
   .choise img {
-    margin-top: 150px;
+    margin-top: 100px;
     width: 300px;
     height: 190px;
+  }
+  .choise_dark {
+    min-width: 320px;
+    min-height: 390px;
   }
   .choise_dark .title {
     display: none;
   }
   .choise_dark .sub_title {
-    margin-top: 278px;
+    padding-bottom: 28px;
+    margin-top: 250px;
+    line-height: 24px;
+    font-weight: 300;
   }
   .choise_white {
     display: none;
+  }
+  .require {
+    padding: 0px 0px 0px 0px;
+  }
+  .require_block {
+    margin: 16px 0px;
+  }
+  .require .title {
+    font-size: 16px;
+    margin: 14px 0px 0px;
+  }
+  .require .require_title {
+    text-align: center;
+    font-size: 16px;
+  }
+  .require .require_list li {
+    line-height: 20px;
+    margin-bottom: 6px;
+    font-size: 14px;
+  }
+  .world_map {
+    padding-bottom: 12px;
+    min-width: 320px;
+    min-height: 360px;
+  }
+  .world_map .label {
+    margin-top: 28px;
+  }
+  .world_map .title {
+    margin-top: 24px;
+    font-size: 16px;
+  }
+  .world_map .link_all_sities {
+    margin-top: 212px;
+  }
+  .info_link_main {
+    margin-top: 20px;
+    width: 300px;
+  }
+  .info_link_main a {
+    font-size: 14px;
+    font-weight: 300;
   }
 }
