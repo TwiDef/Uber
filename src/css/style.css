@@ -965,6 +965,9 @@ a {
   .choise_white .sub_title {
     padding-top: 140px;
   }
+  .info_link_minor a {
+    font-size: 11px;
+  }
 }
 
 /* ===================== 575px =================== */
@@ -1044,6 +1047,9 @@ a {
   .mobile {
     padding: 48px 0 28px 0;
   }
+  .mobile_item {
+    width: 294px;
+  }
   .mobile .title {
     font-size: 15px;
   }
@@ -1110,12 +1116,32 @@ a {
   .world_map .link_all_sities {
     margin-top: 212px;
   }
+  .info_link hr {
+    width: 260px;
+  }
+  .info_media {
+    width: 50%;
+  }
+  .info_media_logo {
+    margin-right: 6px;
+  }
   .info_link_main {
+    padding: 0 8px 0 8px;
     margin-top: 20px;
     width: 300px;
   }
   .info_link_main a {
     font-size: 14px;
     font-weight: 300;
+  }
+  .info_link_minor {
+    width: 100%;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    padding: 0 18px 0 18px;
+  }
+  .info_link_minor a {
+    font-size: 11px;
+    padding: 0 14px 0 14px;
   }
 }
