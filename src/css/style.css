@@ -1023,8 +1023,14 @@ a {
   .menu {
     width: 82%;
   }
+  .menu_item {
+    width: 100%;
+    text-align: center;
+    padding: 4px 0;
+  }
   .menu_link {
     font-size: 16px;
+    display: block;
   }
   .reason {
     padding: 20px 0 32px 0px;
